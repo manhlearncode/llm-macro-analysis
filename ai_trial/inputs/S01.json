@@ -1,0 +1,19 @@
+{
+  "sample_id": "S01",
+  "provenance": "extracted_office",
+  "input_sha256": "09c117df547a688892f8996c1e247d3b10207ac2f6bba2892521a0837897dffa",
+  "extraction_status": "success",
+  "evidence": [
+    {
+      "id": "L001",
+      "origin_evidence_id": "E002",
+      "module": "Module1.bas",
+      "location": "VBA/Module1",
+      "line_start": 2,
+      "line_end": 4,
+      "type": "vba_source_excerpt",
+      "excerpt": "Sub S01_Benign()\n    MsgBox \"Hello\"\nEnd Sub"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{
+  "sample_id": "S06-pending",
+  "observed": [],
+  "inferred": [],
+  "unverified": [
+    {
+      "question": "Mẫu có chứa Macro VBA hay không?",
+      "reason": "extraction_status là not_run và evidence rỗng; chưa có kết quả trích xuất để xác minh."
+    },
+    {
+      "question": "Mẫu có sử dụng G2 (nối chuỗi/Chr) hoặc G5 (gọi hàm gián tiếp bằng tên lưu trong biến) hay không?",
+      "reason": "Không có evidence chứa mã VBA để xác định các kỹ thuật này hoặc giải chuỗi."
+    }
+  ]
+}

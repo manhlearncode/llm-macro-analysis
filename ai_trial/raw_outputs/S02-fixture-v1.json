@@ -1,0 +1,29 @@
+
+{
+"sample_id": "S02-fixture",
+"observed": [
+{
+"technique_id": "G2",
+"claim": "Biểu thức gán cho biến s sử dụng toán tử nối chuỗi & kết hợp với lời gọi Chr(99).",
+"evidence_ids": ["L001"]
+}
+],
+"inferred": [
+{
+"claim": "Biểu thức gán cho s dự kiến tạo chuỗi 'Xin chao'.",
+"condition": "Nếu Chr được phân giải là hàm Chr tích hợp của VBA và biểu thức được đánh giá theo ngữ nghĩa VBA thông thường.",
+"evidence_ids": ["L001"],
+"verification": "needs_human_check"
+}
+],
+"unverified": [
+{
+"question": "Thủ tục Demo đã được thực thi chưa?",
+"reason": "L001 chỉ cung cấp mã nguồn, không có nhật ký hoặc kết quả thực thi."
+},
+{
+"question": "Mẫu đầy đủ có sử dụng G5 không?",
+"reason": "L001 không thể hiện lời gọi gián tiếp bằng tên hàm lưu trong biến; đoạn trích này không đủ để kết luận về toàn bộ mẫu."
+}
+]
+}

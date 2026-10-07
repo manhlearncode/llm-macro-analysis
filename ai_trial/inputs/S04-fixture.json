@@ -1,0 +1,18 @@
+{
+  "sample_id": "S04-fixture",
+  "provenance": "synthetic_fixture",
+  "input_sha256": null,
+  "extraction_status": "fixture",
+  "evidence": [
+    {
+      "id": "L001",
+      "module": "Module1.bas",
+      "location": "Module1.bas",
+      "line_start": 1,
+      "line_end": 5,
+      "type": "vba_source_excerpt",
+      "excerpt": "Sub Demo()\n    Dim target As String\n    target = \"SayHello\"\n    Application.Run target\nEnd Sub"
+    }
+  ],
+  "errors": []
+}

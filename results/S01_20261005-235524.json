@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.1",
+  "input": {
+    "filename": "S01.dotm",
+    "sha256": "09c117df547a688892f8996c1e247d3b10207ac2f6bba2892521a0837897dffa"
+  },
+  "analysis": {
+    "status": "success",
+    "scope": "vba_static_analysis",
+    "has_macro": true,
+    "module_count": 2,
+    "modules": [
+      {
+        "module": "ThisDocument.cls",
+        "type": "standard",
+        "location": "VBA/ThisDocument",
+        "evidence_id": "E001",
+        "source_extracted": true,
+        "source_status": "extracted",
+        "source": "Attribute VB_Name = \"ThisDocument\"\r\nAttribute VB_Base = \"0{00020906-0000-0000-C000-000000000046}\"\r\nAttribute VB_GlobalNameSpace = False\r\nAttribute VB_Creatable = False\r\nAttribute VB_PredeclaredId = True\r\nAttribute VB_Exposed = True\r\nAttribute VB_TemplateDerived = False\r\nAttribute VB_Customizable = True\r\n"
+      },
+      {
+        "module": "Module1.bas",
+        "type": "standard",
+        "location": "VBA/Module1",
+        "evidence_id": "E002",
+        "source_extracted": true,
+        "source_status": "extracted",
+        "source": "Attribute VB_Name = \"Module1\"\r\nSub S01_Benign()\r\n    MsgBox \"Hello\"\r\nEnd Sub\r\n"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "evidence_id": "E001",
+      "module": "ThisDocument.cls",
+      "location": "VBA/ThisDocument",
+      "type": "module_presence",
+      "description": "Phát hiện và trích xuất module VBA"
+    },
+    {
+      "evidence_id": "E002",
+      "module": "Module1.bas",
+      "location": "VBA/Module1",
+      "type": "module_presence",
+      "description": "Phát hiện và trích xuất module VBA"
+    }
+  ],
+  "errors": []
+}

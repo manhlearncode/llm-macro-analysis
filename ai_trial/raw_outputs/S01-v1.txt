@@ -1,0 +1,32 @@
+{
+  "sample_id": "S01",
+  "observed": [
+    {
+      "technique_id": null,
+      "claim": "Đoạn trích khai báo thủ tục S01_Benign() và chứa câu lệnh MsgBox với chuỗi trực tiếp "Hello".",
+      "evidence_ids": ["L001"]
+    }
+  ],
+  "inferred": [
+    {
+      "claim": "Thủ tục có thể hiển thị hộp thông báo chứa nội dung "Hello".",
+      "condition": "Thủ tục S01_Benign() được gọi trong môi trường VBA và câu lệnh MsgBox thực thi thành công.",
+      "evidence_ids": ["L001"],
+      "verification": "needs_human_check"
+    }
+  ],
+  "unverified": [
+    {
+      "question": "Thủ tục S01_Benign() đã được thực thi chưa?",
+      "reason": "Đầu vào chỉ có mã nguồn trích xuất, không có bằng chứng thực thi."
+    },
+    {
+      "question": "Các phần mã khác của mẫu có sử dụng G2 hoặc G5 không?",
+      "reason": "Đoạn trích được cung cấp chỉ bao phủ dòng 2–4 của Module1.bas; không có toàn bộ mã để kiểm tra."
+    },
+    {
+      "question": "Mẫu có thể được xác định là lành tính hay mã độc không?",
+      "reason": "Tên thủ tục S01_Benign và đoạn trích MsgBox không đủ để kết luận về toàn bộ mẫu."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "sample_id": "S04-fixture",
+  "observed": [
+    {
+      "technique_id": null,
+      "claim": "Trong Sub Demo, biến target được khai báo kiểu String và được gán một chuỗi hằng.",
+      "evidence_ids": ["L001"]
+    },
+    {
+      "technique_id": "G5",
+      "claim": "Excerpt chứa lời gọi Application.Run target, sử dụng biến target để cung cấp tên đích gọi gián tiếp.",
+      "evidence_ids": ["L001"]
+    }
+  ],
+  "inferred": [
+    {
+      "claim": "Tên đích được truyền cho Application.Run sẽ là "SayHello".",
+      "condition": "Nếu phép gán được thực thi và target giữ nguyên giá trị đến khi lời gọi Application.Run được thực thi.",
+      "evidence_ids": ["L001"],
+      "verification": "needs_human_check"
+    }
+  ],
+  "unverified": [
+    {
+      "question": "Thủ tục SayHello có tồn tại, được phân giải thành công và thực hiện chức năng gì?",
+      "reason": "L001 không cung cấp định nghĩa SayHello hoặc ngữ cảnh để xác minh việc phân giải tên."
+    },
+    {
+      "question": "Demo hoặc thủ tục đích đã được thực thi hay chưa?",
+      "reason": "L001 chỉ chứa đoạn mã nguồn, không có nhật ký hoặc kết quả thực thi."
+    }
+  ]
+}
